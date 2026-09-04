@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Donation Form</title>
+</head>
+<body>
+    <h1>📔Book Donation Form</h1>
+    <h2>Donation of Books for the Needy Ones</h2>
+    <form> 
+        <fieldset>
+            <legend><b>Personal Information</b></legend><br>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required style="width: 200px;" placeholder="Enter your name"><br>
+            <label for="Age">Age:</label><br>
+            <input type="number" id="Age" name="Age" required><br>
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="Male" name="gender" value="Male" required>
+            <label for="Male">Male</label><br>
+            <input type="radio" id="Female" name="gender" value="Female" required>
+            <label for="Female">Female</label><br>
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address" required style="width: 400px;"><br>
+            <label for="Phone Number">Phone Number:</label><br>
+            <input type="tel" id="Phone Number" name="Phone Number" required><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Book Information</b></legend><br>
+            <label for="bookTitle">Book Title:</label><br>
+            <input type="text" id="bookTitle" name="bookTitle" required><br>
+            <label for="author">Author:</label><br>
+            <input type="text" id="author" name="author" required><br>
+            <label for="genre">Genre:</label><br>
+            <input type="text" id="genre" name="genre" required><br>
+            <label for="condition">Condition:</label><br>
+            <select id="condition" name="condition" required>
+                <option value="">Select condition</option>
+                <option value="New">New</option>
+                <option value="Good">Good</option>
+                <option value="Fair">Fair</option>
+                <option value="Poor">Poor</option>
+            </select><br>
+            <label for="purchase date">Purchase Date:</label><br>
+            <input type="date" id="purchase date" name="purchase date" required><br>
+        </fieldset>
+    </form>
+    <button type="submit" style="background-color: #4CAF50; color: white; padding: 14px 80px; border: none; border-radius: 4px; cursor: pointer;">Submit</button>
+</body>
+</html>
