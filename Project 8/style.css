@@ -1,0 +1,64 @@
+body {
+    background-color: #87ceeb;
+    background-image: radial-gradient(circle, white 2px, transparent 3px);
+    background-size: 40px 40px;
+    background-repeat: repeat;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+.weather-card {
+    width: 450px;
+    border: 3px solid white;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right, #1e90ff, #87cefa);
+}
+
+.weather-card h2 {
+    margin-left: 20px;
+}
+
+.weather-icon {
+    font-size: 70px;
+    animation: floatCloud 3s infinite alternate;
+}
+
+@keyframes floatCloud {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateX(10px) translateY(10px);
+    }
+}
+
+.weather-details {
+    font-size: 18px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    background-color: #cd4a03;
+    background-image: linear-gradient(to bottom right, #ff7f50, #ff693f);
+    border-radius: 15px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.forecast-station {
+    font-size: 16px;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-shadow: 1px 1px 2px black;
+    background-color: #cd4a03;
+    background-image: linear-gradient(to bottom right, #056af8, #ff693f);
+    border-radius: 15px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.forecast-station .day {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
