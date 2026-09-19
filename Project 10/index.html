@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Ice Cream Shop Menu</title>
+    <style>
+        body {
+            background-color: #ffe5ec;
+            font-family: Arial, sans-serif;
+        }
+
+        .menu-card {
+            width: 80%;
+            max-width: 650px;
+            margin: 40px auto;
+            padding: 30px;
+            border: 5px solid #c23868;
+            border-radius: 15px;
+            background-color: #fff8ed;
+        }
+
+        .Title {
+            color: #c23868;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        h1 {
+            color: #8d2149;
+        }
+
+        h1+p {
+            color: #665361;
+        }
+
+        h1+p::first-letter {
+            color: #c23868;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        h2 {
+            color: #8d2149;
+        }
+
+     
+
+        ul.flavours>li {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+
+        ul.flavours>li:hover {
+            border: 2px solid #ee7de1;
+        }
+
+        ul.flavours>li:nth-child(1) {
+            background: #a5544e;
+        }
+
+        ul.flavours>li:nth-child(2) {
+            background: #ffd9d6;
+        }
+
+        ul.flavours>li:nth-child(3) {
+            background: #ffb6c8;
+            font-weight: bold;
+        }
+
+        ul.flavours>li:nth-child(4) {
+            background: #ffe29a;
+        }
+
+        ul.flavours>li:nth-child(3)::after {
+            padding: 5px;
+            color: #8d2149;
+            content: "Today's Special";
+            font-size: 12px;
+        }
+
+        .price {
+            color: #ff5490;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 12px 20px;
+            border: 0;
+            border-radius: 8px;
+            color: #fff;
+            background-color: #c23868;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #8d2149;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="menu-card">
+        <p class="Title">Raipur Ice Cream Wala</p>
+        <h1>My Ice Cream Shop Menu</h1>
+        <p>Welcome to Raipur Ice Cream Wala, where every scoop is made with more flavor of Raipur.
+        </p>
+
+        <section aria-labelledby="flavours-heading">
+            <h2 id="flavours-heading">Today's flavours</h2>
+            <ul class="flavours">
+                <li><span>Choco Chips</span><span class="price">100</span></li>
+                <li><span>Vanilla</span><span class="price">120</span></li>
+                <li><span>StrawBerry</span><span class="price">150</span></li>
+                <li><span>Mango</span><span class="price">120</span></li>
+            </ul>
+        </section>
+
+        <button type="button">Order a scoop</button>
+    </main>
+</body>
+
+</html>
